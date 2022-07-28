@@ -16,3 +16,6 @@ def test(name = None):
         name=name,
         date=datetime.now()
     )
+
+if __name__ == '__main__':
+    app.run()
