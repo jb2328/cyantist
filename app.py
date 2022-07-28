@@ -1,7 +1,11 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template, Request
+
+class R(Request):
+    # Whitelist your SRCF and/or custom domains to access the site via proxy.
+    trusted_hosts = {"jb2328.user.srcf.net", "cyantist.xyz"}
 
 app = Flask(__name__)
+app.request_class = R
 
 @app.route("/")
 def home():
