@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Request
+from flask import Flask, render_template, Request, url_for
 
 class R(Request):
     # Whitelist your SRCF and/or custom domains to access the site via proxy.
@@ -20,6 +20,10 @@ def test(name = None):
         name=name,
         date=datetime.now()
     )
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
