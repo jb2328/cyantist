@@ -231,7 +231,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #rgb(1, 112, 64);
+  color: rgb(46, 100, 79);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -785,6 +785,13 @@ section {
   color: #848484;
 }
 
+
+/*--------------------------------------------------------------
+# Link
+--------------------------------------------------------------*/
+
+.link { color: #444444; } /* CSS link color (red) */
+.link:hover { color:  #3b9d69; } /* CSS link hover (green) */
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
