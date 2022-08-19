@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Cyanovision - toxic alge and cyanobacteria monitoring</title>
+    <title>Cyanovision - toxic cyanobacteria monitoring</title>
     <meta content="" name="description">
 
     <meta content="" name="keywords">
@@ -24,6 +24,10 @@
     <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- ion icons -->
+	<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+		
 
     <!-- Template Main CSS File -->
     <link href="{{url_for('static', filename= 'assets/css/style.css')}}" rel="stylesheet", type = "text/css">
@@ -51,11 +55,12 @@
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Product</a></li>
+                    <li><a class="nav-link scrollto" href="#values">Product</a></li>
                     <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#testimonials">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#documentation">Documentation</a></li>
                     <!-- <li><a href="blog.html">Blog</a></li> -->
-                    <li class="dropdown"><a href="#"><span>Documentation</span> <i class="bi bi-chevron-down"></i></a>
+                    <!--<li class="dropdown"><a href="#"><span>Documentation</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Hardware</a></li>
                             <li class="dropdown"><a href="#"><span>Software</span> <i class="bi bi-chevron-right"></i></a>
@@ -68,9 +73,9 @@
                             <li><a href="#">Dataset</a></li>
                             <li><a href="#">Instructions</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                    <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -86,8 +91,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">A low-cost, open-source algae sensing device for environmental monitoring</h1>
-                    <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented researchers creating sensors to save the planet</h2>
+                    <h1 data-aos="fade-up">A low-cost, open-source cyanobacteria sensing device for environmental monitoring</h1>
+                    <!-- <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented researchers creating sensors to save the planet</h2> -->
                     <div data-aos="fade-up" data-aos-delay="600">
                         <div class="text-center text-lg-start">
                             <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
@@ -118,11 +123,11 @@
                             <h3>Who We Are</h3>
                             <h2>We are a group of Cambridge postgraduate students working on sensor technologies for healthy and sustainable future.</h2>
                             <p>
-                                Cyanovision started out as a summer-long group project aiming to tackle the challenge of timely algae-contaminated water detection.
+                                Cyanovision started out as a summer-long group project aiming to tackle the challenge of timely blue detection of cyanobacteria in water samples.
 
                             </p>
                             <div class="text-center text-lg-start">
-                                <a href="#values" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                                <a href="#problem" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                                     <span>Read More</span>
                                     <i class="bi bi-arrow-down"></i>
                                 </a>
@@ -140,14 +145,43 @@
         </section>
         <!-- End About Section -->
 
+        <!-- ======= The Problem ======= -->
+        <section id="problem" class="problem">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h2>The Problem</h2>
+                    <p> Cyanobacteria can have toxic effects on people, animals and the environment.</p>
+                </header>
+                <div class="row feture-tabs" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-6 col-md-4">
+                        <div class="box">
+                        <img src="static/assets/img/dalle_microscope_wild.png" class="img-fluid" alt=""> 
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-8">
+                        <h3 class="greenTextOverride"><i class="bi bi-caret-right-fill"></i>What are cyanobacteria? </h3>
+                        <h5> Cyanobacteria, also known as blue-green algae, are photosynthetic bacteria living on water surfaces and usually present in relatively low concentrations. Cyanobacteria growth can be promoted by hot waters as well as human activities such as the use of fertilisers in agriculture that are rich in nutrients like nitrogen and phosphorus. Rapid multiplication and increase of cyanobacteria in water can result in algal blooms.</h5>
+                        <h3 class="greenTextOverride"><i class="bi bi-caret-right-fill"></i>Why can cyanobacterial algal blooms be harmful?</h3>
+                        <h5>The algal blooms often produce toxins detrimental to the health of humans, animals and ecosystems. Blooms can also affect other organisms in the water by blocking sunlight below the surface and preventing their access to oxygen and nutrients. Toxic cyanobacteria blooms have been reported in the UK, for example in <a href="https://www.bbc.com/news/uk-england-cambridgeshire-62497000" class="link" target="_blank">Milton Country Park, near Cambridge, in August 2022. </a> </h5>
+                    </div>
+                </div>
+
+            </div>
+        </section>  
+
+        <!-- ======= End Problem Section ======= -->
+
         <!-- ======= Values Section ======= -->
         <section id="values" class="values">
 
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h2>Our Product</h2>
-                    <p>We have created a low-cost solution for algae and cyanobacteria detection in water samples. </p>
+                    <h2>Our Solution</h2>
+                    <p>We have created a low-cost solution for cyanobacteria and algae detection in water samples. </p>
                 </header>
 
                 <div class="row">
@@ -156,23 +190,23 @@
                         <div class="box">
                             <img src="static/assets/img/microscope.png" class="img-fluid" alt="">
                             <h3>Novel microscopy system.</h3>
-                            <p>We have created a novel microscopy system based on the <a class="link" href="https://openflexure.org/projects/microscope/">OpenFlexure Microscope</a> for the detection of cyanobacteria in fresh water, currently using bright-field microscopy. </p>
+                            <p>We have created a novel microscopy system based on the <a class="link" href="https://openflexure.org/projects/microscope/" target="_blank">OpenFlexure Microscope</a> for the detection of cyanobacteria  and algae in fresh water, currently using bright-field microscopy. </p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <img src="static/assets/img/object_detection.png" class="img-fluid" alt="">
-                            <h3>Machine Learning-based algae detection system.</h3>
-                            <p>Our machine learning algorithm, based on objected detection, has been trained to identify cyanobacteria species of different morphologies (e.g. unicellular, filamentous and rod-shaped) in bright-field images.</p>
+                            <img src="static/assets/img/obj_detect.png" class="img-fluid" alt="">
+                            <h3>Machine Learning-based cyanobacteria detection system.</h3>
+                            <p>Our machine learning algorithm, based on objected detection, has been trained to identify cyanobacteria species of different morphologies (e.g. unicellular, filamentous and rod-shaped) as well as the common algae in bright-field images.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <img src="static/assets/img/values-1.png" class="img-fluid" alt="">
+                            <img src="static/assets/img/ios_image.png" class="img-fluid" alt="">
                             <h3>User-friendly UI.</h3>
-                            <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
+                            <p>We have created a user-friendly UI that enables the use of our software without requiring any coding knowledge</p>
                         </div>
                     </div>
 
@@ -184,7 +218,7 @@
         <!-- End Values Section -->
 
         <!-- ======= Counts Section ======= -->
-        <section id="counts" class="counts">
+        <!--<section id="counts" class="counts">
             <div class="container" data-aos="fade-up">
 
                 <div class="row gy-4">
@@ -232,7 +266,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
         <!-- End Counts Section -->
 
         <!-- ======= Features Section ======= -->
@@ -242,10 +276,10 @@
 
                 <header class="section-header">
                     <h2>Features</h2>
-                    <p>What we offer</p>
+                    <p>The benefits of timely toxic cyanobacteria and algae detection in lakes and rivers.</p>
                 </header>
 
-                <div class="row">
+                <!--<div class="row">
 
                     <div class="col-lg-6">
                         <img src="static/assets/img/cyberpunk_female.png" class="img-fluid" alt="">
@@ -304,30 +338,28 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
                 <!-- / row -->
 
                 <!-- Feature Tabs -->
-                <div class="row feture-tabs" data-aos="fade-up">
+                <!--<div class="row feture-tabs" data-aos="fade-up">
                     <div class="col-lg-6">
-                        <h3>Algal blooms and cyanobacteria, also known as as blue-green algae can have toxic effects on people, animals and the environment.</h3>
-                        <h5> Our aim was to create a monitoring system that informs people about toxic algae concentrations. We propose an integrated all-in-one system for continuous algae and cyanobacteria monitoring in the wild.</h5>
+                        <h3>Detection system</h3>
+                        <h5>Below we present some high magnification microscopy images of the cyanobacteria and algae species used to train our ML model as well as a closeup of our object-detection software output</h5>
 
-                        <!-- Tabs -->
+                        
                         <ul class="nav nav-pills mb-3">
                             <li>
                                 <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Microscopy System</a>
                             </li>
                             <li>
-                                <a class="nav-link" data-bs-toggle="pill" href="#tab2">ML and UI</a>
+                                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Filamentous</a>
                             </li>
                             <li>
                                 <a class="nav-link" data-bs-toggle="pill" href="#tab3">Public Dataset</a>
                             </li>
                         </ul>
-                        <!-- End Tabs -->
-
-                        <!-- Tab Content -->
+                        
                         <div class="tab-content">
 
                             <div class="tab-pane fade show active" id="tab1">
@@ -343,7 +375,7 @@
                                 </div>
                                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
                             </div>
-                            <!-- End Tab 1 Content -->
+                            
 
                             <div class="tab-pane fade show" id="tab2">
                                 <p>ML and Sotiris' UI. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
@@ -358,7 +390,7 @@
                                 </div>
                                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
                             </div>
-                            <!-- End Tab 2 Content -->
+                            
 
                             <div class="tab-pane fade show" id="tab3">
                                 <p>Unique Algae and Cyanovision dataset. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
@@ -373,7 +405,7 @@
                                 </div>
                                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
                             </div>
-                            <!-- End Tab 3 Content -->
+                            
 
                         </div>
 
@@ -383,18 +415,16 @@
                         <img src="static/assets/img/features-2.png" class="img-fluid" alt="">
                     </div>
 
-                </div>
+                </div> -->
                 <!-- End Feature Tabs -->
 
                 <!-- Feature Icons -->
                 <div class="row feature-icons" data-aos="fade-up">
-                    <h3>The benefits of timely toxic algae and cyanobacteria detection in lakes and rivers.
-                    </h3>
 
                     <div class="row">
 
                         <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-                            <img src="static/assets/img/features-3.png" class="img-fluid p-4" alt="">
+                            <img src="static/assets/img/cyberpunk_female.png" class="img-fluid p-4" alt="">
                         </div>
 
                         <div class="col-xl-8 d-flex content">
@@ -411,8 +441,11 @@
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                                     <i class="ri-stack-line"></i>
                                     <div>
-                                        <h4>Full-stack software solution</h4>
-                                        <p> Full-stack software solution with front and back-end implementations.</p>
+                                        <!--<h4>Full-stack software solution</h4>
+                                        <p> Full-stack software solution with front and back-end implementations.</p>-->
+                                        <h4>Microfluidics channel system</h4>
+                                        <p>Our microscope is connected to a microfluidics channel to filter out larger microorganisms and contaminants as well as ensure the flow of the water is suitable for the imaging </p>
+
                                     </div>
                                 </div>
 
@@ -435,7 +468,7 @@
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                                     <i class="ri-command-line"></i>
                                     <div>
-                                        <h4>Mac Command Button</h4>
+                                        <h4> Publicly Available Dataset</h4>
                                         <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
                                     </div>
                                 </div>
@@ -462,7 +495,7 @@
         <!-- End Features Section -->
 
         <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
+        <section id="documentation" class="services">
 
             <div class="container" data-aos="fade-up">
 
@@ -551,7 +584,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    How do I get a reaction emoji with my face on it on Slack?
+                                        How do I build the device?
                   </button>
                                 </h2>
                                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
@@ -564,7 +597,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    How do I build the device?
+                                        Do I need ML experience to operate the device?
                   </button>
                                 </h2>
                                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
@@ -578,7 +611,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    Do I need ML experience to operate the device?
+                                        How did you manage to finish this in only 3 months?
                   </button>
                                 </h2>
                                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
@@ -600,7 +633,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
-                    How did you manage to finish this in only 3 months?
+                    Why is bright-field microscopy use rather than fluorescence?
                   </button>
                                 </h2>
                                 <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
@@ -614,7 +647,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
-                   Why is Oxford so much worse than Cambridge?
+                   Can Cyanovision detect other organisms besides cyanobacteria?
                   </button>
                                 </h2>
                                 <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
@@ -627,13 +660,12 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
-                    What are the 10 reasons why Fitz is the best college in Cambridge?
+                    Where did you get the artwork shown in this website?
                   </button>
                                 </h2>
                                 <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                                     <div class="accordion-body">
-                                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque
-                                        diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                                       DALLE!!
                                     </div>
                                 </div>
                             </div>
@@ -810,8 +842,8 @@
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h2>Testimonials</h2>
-                    <p>What they are saying about us</p>
+                    <h2>Team</h2>
+                    <p><a class="link" href="https://cdt.sensors.cam.ac.uk/sd-classification/2021-student-cohort" target="_blank">Sensor CDT Cohort '22</a></p>
                 </header>
 
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
@@ -1012,20 +1044,16 @@
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h2>Our Clients</h2>
-                    <p>Temporibus omnis officia</p>
+                    <h2>Collaborators</h2>
+                    <p>Sponsors & Collaborators</p>
                 </header>
 
                 <div class="clients-slider swiper">
                     <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="static/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="static/assets/img/sponsors/university-of-cambridge-logo.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="static/assets/img/sponsors/sensor-cdt-logo.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="static/assets/img/sponsors/UKRI_EPSR_CouncilLogo_HorizRGB.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="static/assets/img/sponsors/centre_for_global_equality.jpg" class="img-fluid" alt=""></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -1099,30 +1127,30 @@
                                 <div class="info-box">
                                     <i class="bi bi-geo-alt"></i>
                                     <h3>Address</h3>
-                                    <p>University of Cambridge, Philippa Fawcett Dr,<br>Cambridge CB3 0AS</p>
+                                    <p>Department of Chemical Engineering and Biotechnology, <br> University of Cambridge, <br> Philippa Fawcett Dr,<br>Cambridge CB3 0AS</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <!--<div class="col-md-6">
                                 <div class="info-box">
                                     <i class="bi bi-telephone"></i>
                                     <h3>Call Us</h3>
                                     <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-md-6">
                                 <div class="info-box">
                                     <i class="bi bi-envelope"></i>
                                     <h3>Email Us</h3>
-                                    <p>info@example.com<br>contact@example.com</p>
+                                    <p>admin@sensors.cam.ac.uk</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                           <!-- <div class="col-md-6">
                                 <div class="info-box">
                                     <i class="bi bi-clock"></i>
                                     <h3>Open Hours</h3>
                                     <p>Monday - Friday<br>9:00AM - 05:00PM</p>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
 
                     </div>
@@ -1173,7 +1201,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
 
-        <div class="footer-newsletter">
+        <!-- <div class="footer-newsletter">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 text-center">
@@ -1240,11 +1268,11 @@
 
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>CyanoVision</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Cyanovision</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->

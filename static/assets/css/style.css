@@ -36,6 +36,14 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
+.greenTextOverride
+{
+ font-size: 24px !important;
+ color: #016f36 !important;
+ font-weight: 700 !important;
+ margin-bottom: 12px;
+ margin-top: 12px;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -745,7 +753,7 @@ section {
 }
 
 .features .feature-icons {
-  margin-top: 120px;
+  margin-top: 10px;
 }
 
 .features .feature-icons h3 {
