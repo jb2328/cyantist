@@ -1,4 +1,4 @@
-# cyantist
+# Cyantist
 [Cyanovision website](https://www.cyantist.xyz/)
 
 ![CyanoVision](cyantist.png)
